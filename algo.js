@@ -22,10 +22,10 @@ const sumThemAll1 = (arr1) => {
   return total1;
 };
 
-const sumAllLong = sumThemAll1([21, 13]);
-
 generatePtag(
-  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Long way &#8594; ${sumAllLong}`
+  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Long way &#8594; ${sumThemAll1(
+    [21, 13]
+  )}`
 );
 
 //* Sum all the numbers in a range with 2 numbers given in or out of sequence
@@ -39,10 +39,10 @@ const sumThemAll2 = (arr2) => {
   return total2;
 };
 
-const sumAllShort = sumThemAll1([11, 14]);
-
 generatePtag(
-  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Short way &#8594; ${sumAllShort}`
+  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Short way &#8594; ${sumThemAll1(
+    [11, 14]
+  )}`
 );
 
 //* NUMBER 2
@@ -65,10 +65,11 @@ const symDiff = (arr1, arr2) => {
 const firstArray = [1, 3, 5, 7, 18, 11, 14];
 const secondArray = [2, 3, 18, 10, 7, 11];
 
-const symDifference1 = symDiff(firstArray, secondArray);
-
 generatePtag(
-  `Return the symmetric differences between 2 arrays - Long way &#8594; ${symDifference1}`
+  `Return the symmetric differences between 2 arrays - Long way &#8594; ${symDiff(
+    firstArray,
+    secondArray
+  )}`
 );
 
 //* Return the symmetric differences between 2 arrays
