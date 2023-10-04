@@ -82,5 +82,5 @@ const diff2 = arr2.filter((item) => !arr1.includes(item));
 const result = [...diff1, ...diff2];
 
 generatePtag(
-  `Return the symmetric differences between 2 arrays - Long way &#8594; ${result}`
+  `Return the symmetric differences between 2 arrays - Short way &#8594; ${result}`
 );
