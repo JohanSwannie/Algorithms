@@ -53,16 +53,17 @@ const symDiff = (arr1, arr2) => {
   const togetherValues = new Set([...arr1, ...arr2]);
   const diffArr = [];
   for (element of togetherValues) {
-    if (arr1.includes(element) && !arr2.includes(element)) {
-      diffArr.push(element);
-    } else if (arr2.includes(element) && !arr1.includes(element)) {
-      diffArr.push(element);
-    }
+    arr1.includes(element) && !arr2.includes(element)
+      ? diffArr.push(element)
+      : null;
+    arr2.includes(element) && !arr1.includes(element)
+      ? diffArr.push(element)
+      : null;
   }
   return diffArr;
 };
 
-const firstArray = [1, 3, 7, 18, 11, 14];
+const firstArray = [1, 3, 5, 7, 18, 11, 14];
 const secondArray = [2, 3, 18, 10, 7, 11];
 
 const symDifference1 = symDiff(firstArray, secondArray);
