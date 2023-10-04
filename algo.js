@@ -55,8 +55,7 @@ const symDiff = (arr1, arr2) => {
   for (element of togetherValues) {
     arr1.includes(element) && !arr2.includes(element)
       ? diffArr.push(element)
-      : null;
-    arr2.includes(element) && !arr1.includes(element)
+      : arr2.includes(element) && !arr1.includes(element)
       ? diffArr.push(element)
       : null;
   }
