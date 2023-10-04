@@ -17,6 +17,8 @@ h2 {
 }
 
 .container {
+  background-color: saddlebrown;
+  color: #fff;
   width: 80vw;
   padding: 3rem;
   border: 2px solid navy;
