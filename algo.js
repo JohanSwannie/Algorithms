@@ -6,9 +6,11 @@ const generatePtag = (innerContent) => {
   container.appendChild(pippie);
 };
 
+//********************************************************************************* //
 //* NUMBER 1
 //* Sum all the numbers in a range with 2 numbers given in or out of sequence
 //* Long way
+//********************************************************************************* //
 
 const sumThemAll1 = (arr1) => {
   arr1.sort();
@@ -27,8 +29,10 @@ generatePtag(
   )}`
 );
 
+//********************************************************************************* //
 //* Sum all the numbers in a range with 2 numbers given in or out of sequence
 //* Short way
+//********************************************************************************* //
 
 const sumThemAll2 = (arr2) => {
   let total2 = 0;
@@ -44,9 +48,11 @@ generatePtag(
   )}`
 );
 
+//********************************************************************************* //
 //* NUMBER 2
 //* Return the symmetric differences between 2 arrays
 //* Long way
+//********************************************************************************* //
 
 const symDiff = (arr1, arr2) => {
   const togetherValues = new Set([...arr1, ...arr2]);
@@ -71,8 +77,10 @@ generatePtag(
   )}`
 );
 
+//********************************************************************************* //
 //* Return the symmetric differences between 2 arrays
 //* Short way
+//********************************************************************************* //
 
 const arr1 = [9, 13, 3, 17, 10, 11, 29, 18];
 const arr2 = [2, 3, 18, 10, 7, 11, 17];
