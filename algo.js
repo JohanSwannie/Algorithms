@@ -13,7 +13,7 @@ const generatePtag = (innerContent) => {
 //********************************************************************************* //
 
 const sumThemAll1 = (arr1) => {
-  arr1.sort();
+  arr1.sort((a, b) => a - b);
   let min = arr1[0];
   let max = arr1[1];
   let total1 = 0;
@@ -24,9 +24,8 @@ const sumThemAll1 = (arr1) => {
 };
 
 generatePtag(
-  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Long way &#8594; ${sumThemAll1(
-    [21, 13]
-  )}`
+  `Sum all the numbers in a range with 2 numbers given in or out of sequence
+   - Long way &#8594; ${sumThemAll1([21, 13])}`
 );
 
 //********************************************************************************* //
@@ -43,9 +42,8 @@ const sumThemAll2 = (arr2) => {
 };
 
 generatePtag(
-  `Sum all the numbers in a range with 2 numbers given in or out of sequence - Short way &#8594; ${sumThemAll1(
-    [11, 14]
-  )}`
+  `Sum all the numbers in a range with 2 numbers given in or out of sequence
+   - Short way &#8594; ${sumThemAll2([11, 14])}`
 );
 
 //********************************************************************************* //
